@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feliz San Valentín Vanesa</title>
+
+<style>
+body{
+    margin:0;
+        padding:0;
+            display:flex;
+                justify-content:center;
+                    align-items:center;
+                        height:100vh;
+                            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+                                font-family: 'Segoe UI', sans-serif;
+                                    overflow:hidden;
+                                    }
+
+                                    .card{
+                                        background:white;
+                                            padding:40px;
+                                                border-radius:20px;
+                                                    text-align:center;
+                                                        box-shadow:0 10px 25px rgba(0,0,0,0.2);
+                                                            animation: fadeIn 2s ease-in-out;
+                                                            }
+
+                                                            h1{
+                                                                color:#ff4b6e;
+                                                                    font-size:2.5em;
+                                                                    }
+
+                                                                    p{
+                                                                        color:#444;
+                                                                            font-size:1.2em;
+                                                                                margin-top:15px;
+                                                                                }
+
+                                                                                .heart{
+                                                                                    font-size:50px;
+                                                                                        color:#ff4b6e;
+                                                                                            animation: pulse 1s infinite;
+                                                                                                margin-top:20px;
+                                                                                                }
+
+                                                                                                button{
+                                                                                                    margin-top:25px;
+                                                                                                        padding:12px 25px;
+                                                                                                            border:none;
+                                                                                                                border-radius:25px;
+                                                                                                                    background:#ff4b6e;
+                                                                                                                        color:white;
+                                                                                                                            font-size:1em;
+                                                                                                                                cursor:pointer;
+                                                                                                                                    transition:0.3s;
+                                                                                                                                    }
+
+                                                                                                                                    button:hover{
+                                                                                                                                        background:#ff1f4d;
+                                                                                                                                            transform:scale(1.1);
+                                                                                                                                            }
+
+                                                                                                                                            @keyframes pulse{
+                                                                                                                                                0%{ transform: scale(1); }
+                                                                                                                                                    50%{ transform: scale(1.2); }
+                                                                                                                                                        100%{ transform: scale(1); }
+                                                                                                                                                        }
+
+                                                                                                                                                        @keyframes fadeIn{
+                                                                                                                                                            from{ opacity:0; transform:translateY(30px); }
+                                                                                                                                                                to{ opacity:1; transform:translateY(0); }
+                                                                                                                                                                }
+                                                                                                                                                                </style>
+
+                                                                                                                                                                </head>
+                                                                                                                                                                <body>
+
+                                                                                                                                                                <div class="card">
+                                                                                                                                                                    <h1>💖 Feliz VAN Valentín Vanesa 💖</h1>
+                                                                                                                                                                        <p>
+                                                                                                                                                                                Eres la razón de mis sonrisas,  
+                                                                                                                                                                                    Ojitos de mi corazon.
+                                                                                                                                                                                            </p>
+                                                                                                                                                                                                <div class="heart">❤️</div>
+                                                                                                                                                                                                    <button onclick="mostrarMensaje()">Haz clic aquí 💌</button>
+                                                                                                                                                                                                        <p id="mensaje" style="margin-top:15px; font-weight:bold;"></p>
+                                                                                                                                                                                                        </div>
+
+                                                                                                                                                                                                        <script>
+                                                                                                                                                                                                        function mostrarMensaje(){
+                                                                                                                                                                                                            document.getElementById("mensaje").innerHTML = 
+                                                                                                                                                                                                                "Te amo Vanesa, ten un buen VanValetin jsjs. Mi bella luna❤️";
+                                                                                                                                                                                                                }
+                                                                                                                                                                                                                </script>
+
+                                                                                                                                                                                                                </body>
+                                                                                                                                                                                                                </html>
